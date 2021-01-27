@@ -12,7 +12,6 @@
 		F82CB54525BECA64007AE93A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82CB54425BECA64007AE93A /* HomeViewController.swift */; };
 		F82CB54A25BECA65007AE93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82CB54925BECA65007AE93A /* Assets.xcassets */; };
 		F839254425BFF9FD00609A12 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F839254325BFF9FD00609A12 /* HomeViewController.xib */; };
-		F839254725BFFD1F00609A12 /* readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F839254625BFFD1F00609A12 /* readme.rtf */; };
 		F839254C25C003C100609A12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839254A25C003C100609A12 /* LoginViewController.swift */; };
 		F839254D25C003C100609A12 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F839254B25C003C100609A12 /* LoginViewController.xib */; };
 		F839255125C00CBD00609A12 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255025C00CBD00609A12 /* AppConstants.swift */; };
@@ -20,6 +19,7 @@
 		F839255925C00F0B00609A12 /* ClassUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255825C00F0B00609A12 /* ClassUtils.swift */; };
 		F839255D25C01B0500609A12 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255B25C01B0500609A12 /* LaunchScreenViewController.swift */; };
 		F839255E25C01B0500609A12 /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F839255C25C01B0500609A12 /* LaunchScreenViewController.xib */; };
+		F8C92F5625C10C0E00F0C806 /* README.TXT in Resources */ = {isa = PBXBuildFile; fileRef = F8C92F5525C10C0E00F0C806 /* README.TXT */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		F82CB54925BECA65007AE93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82CB54E25BECA65007AE93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F839254325BFF9FD00609A12 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		F839254625BFFD1F00609A12 /* readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
 		F839254A25C003C100609A12 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F839254B25C003C100609A12 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F839255025C00CBD00609A12 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		F839255825C00F0B00609A12 /* ClassUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassUtils.swift; sourceTree = "<group>"; };
 		F839255B25C01B0500609A12 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		F839255C25C01B0500609A12 /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
+		F8C92F5525C10C0E00F0C806 /* README.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		F82CB53425BECA64007AE93A = {
 			isa = PBXGroup;
 			children = (
-				F839254625BFFD1F00609A12 /* readme.rtf */,
+				F8C92F5525C10C0E00F0C806 /* README.TXT */,
 				F82CB53F25BECA64007AE93A /* Demo */,
 				F82CB53E25BECA64007AE93A /* Products */,
 			);
@@ -169,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C92F5625C10C0E00F0C806 /* README.TXT in Resources */,
 				F839254D25C003C100609A12 /* LoginViewController.xib in Resources */,
-				F839254725BFFD1F00609A12 /* readme.rtf in Resources */,
 				F839254425BFF9FD00609A12 /* HomeViewController.xib in Resources */,
 				F82CB54A25BECA65007AE93A /* Assets.xcassets in Resources */,
 				F839255E25C01B0500609A12 /* LaunchScreenViewController.xib in Resources */,
