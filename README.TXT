@@ -6,7 +6,7 @@ https://www.jb51.net/article/181706.htm
 
 --待学习问题
 //XCode快捷键
-ViewController之间的参数传递各个控件的使用方法，属性
+ViewController之间的参数传递各个控件的使用方法，属性：如宽高，大小，颜色 ，背景等
 网络请求
 Json文件处理
 文件IO操作，包括SharePreferences

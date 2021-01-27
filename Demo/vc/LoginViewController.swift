@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,8 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillAppear(animated)
+        showNavigationBar(animated: animated)
     }
 
 
@@ -33,7 +34,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func back(sender:UIView){
         //self.dismiss(animated: true, completion: nil)
-        self.navigationController?.popViewController(animated: true)
+        closeActivity()
     }
 
 }

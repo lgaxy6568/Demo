@@ -14,8 +14,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // 应用程序启动后自定义的覆盖点
-        LogUtils.LogD("application()_1")
-        
+        LogUtils.LogD("application()_1,当前线程是否为主线程=\(ThreadUtils.isMainThread())")
+        //开屏页，即冷启动显示时间
+        Thread.sleep(forTimeInterval: 3)
         return true
     }
 
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LogUtils.LogD("application()_2,创建了一个新的场景")
         // 在创建新的场景会话时调用。
         // 使用此方法可以选择要创建新场景的配置
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+        return UISceneConfiguration(name: "DefaultSceneConfiguration", sessionRole: connectingSceneSession.role)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {

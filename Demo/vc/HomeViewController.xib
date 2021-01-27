@@ -22,7 +22,7 @@
                     <rect key="frame" x="105" y="224" width="150" height="89"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                    <state key="normal" title="Hello World"/>
+                    <state key="normal" title="跳转至登录"/>
                     <connections>
                         <action selector="gotoLoginWithSender:" destination="-1" eventType="touchUpInside" id="USg-MM-SFb"/>
                     </connections>

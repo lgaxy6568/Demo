@@ -17,9 +17,11 @@
 		F839255125C00CBD00609A12 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255025C00CBD00609A12 /* AppConstants.swift */; };
 		F839255625C00EA500609A12 /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255525C00EA500609A12 /* LogUtils.swift */; };
 		F839255925C00F0B00609A12 /* ClassUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255825C00F0B00609A12 /* ClassUtils.swift */; };
-		F839255D25C01B0500609A12 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839255B25C01B0500609A12 /* LaunchScreenViewController.swift */; };
-		F839255E25C01B0500609A12 /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F839255C25C01B0500609A12 /* LaunchScreenViewController.xib */; };
+		F87A662525C14E9E00582F66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87A662425C14E9E00582F66 /* LaunchScreen.storyboard */; };
 		F8C92F5625C10C0E00F0C806 /* README.TXT in Resources */ = {isa = PBXBuildFile; fileRef = F8C92F5525C10C0E00F0C806 /* README.TXT */; };
+		F8C92F5A25C110D600F0C806 /* ThreadUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C92F5925C110D600F0C806 /* ThreadUtils.swift */; };
+		F8C92F5D25C11AC100F0C806 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C92F5C25C11AC100F0C806 /* BaseViewController.swift */; };
+		F8C92F6025C135B900F0C806 /* SplashAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C92F5F25C135B900F0C806 /* SplashAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +37,11 @@
 		F839255025C00CBD00609A12 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F839255525C00EA500609A12 /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
 		F839255825C00F0B00609A12 /* ClassUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassUtils.swift; sourceTree = "<group>"; };
-		F839255B25C01B0500609A12 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
-		F839255C25C01B0500609A12 /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
+		F87A662425C14E9E00582F66 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8C92F5525C10C0E00F0C806 /* README.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
+		F8C92F5925C110D600F0C806 /* ThreadUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadUtils.swift; sourceTree = "<group>"; };
+		F8C92F5C25C11AC100F0C806 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F8C92F5F25C135B900F0C806 /* SplashAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashAdView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +80,10 @@
 				F839254925C0038400609A12 /* vc */,
 				F82CB54025BECA64007AE93A /* AppDelegate.swift */,
 				F82CB54225BECA64007AE93A /* SceneDelegate.swift */,
-				F82CB54425BECA64007AE93A /* HomeViewController.swift */,
-				F839254325BFF9FD00609A12 /* HomeViewController.xib */,
+				F87A662425C14E9E00582F66 /* LaunchScreen.storyboard */,
+				F8C92F5F25C135B900F0C806 /* SplashAdView.xib */,
 				F82CB54925BECA65007AE93A /* Assets.xcassets */,
 				F82CB54E25BECA65007AE93A /* Info.plist */,
-				F839255B25C01B0500609A12 /* LaunchScreenViewController.swift */,
-				F839255C25C01B0500609A12 /* LaunchScreenViewController.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -89,6 +91,8 @@
 		F839254925C0038400609A12 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				F82CB54425BECA64007AE93A /* HomeViewController.swift */,
+				F839254325BFF9FD00609A12 /* HomeViewController.xib */,
 				F839254A25C003C100609A12 /* LoginViewController.swift */,
 				F839254B25C003C100609A12 /* LoginViewController.xib */,
 			);
@@ -100,6 +104,7 @@
 			children = (
 				F839255525C00EA500609A12 /* LogUtils.swift */,
 				F839255825C00F0B00609A12 /* ClassUtils.swift */,
+				F8C92F5925C110D600F0C806 /* ThreadUtils.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F839255025C00CBD00609A12 /* AppConstants.swift */,
+				F8C92F5C25C11AC100F0C806 /* BaseViewController.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -172,8 +178,9 @@
 				F8C92F5625C10C0E00F0C806 /* README.TXT in Resources */,
 				F839254D25C003C100609A12 /* LoginViewController.xib in Resources */,
 				F839254425BFF9FD00609A12 /* HomeViewController.xib in Resources */,
+				F87A662525C14E9E00582F66 /* LaunchScreen.storyboard in Resources */,
 				F82CB54A25BECA65007AE93A /* Assets.xcassets in Resources */,
-				F839255E25C01B0500609A12 /* LaunchScreenViewController.xib in Resources */,
+				F8C92F6025C135B900F0C806 /* SplashAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,9 +193,10 @@
 			files = (
 				F839255925C00F0B00609A12 /* ClassUtils.swift in Sources */,
 				F839255625C00EA500609A12 /* LogUtils.swift in Sources */,
-				F839255D25C01B0500609A12 /* LaunchScreenViewController.swift in Sources */,
 				F839254C25C003C100609A12 /* LoginViewController.swift in Sources */,
 				F82CB54525BECA64007AE93A /* HomeViewController.swift in Sources */,
+				F8C92F5D25C11AC100F0C806 /* BaseViewController.swift in Sources */,
+				F8C92F5A25C110D600F0C806 /* ThreadUtils.swift in Sources */,
 				F82CB54125BECA64007AE93A /* AppDelegate.swift in Sources */,
 				F82CB54325BECA64007AE93A /* SceneDelegate.swift in Sources */,
 				F839255125C00CBD00609A12 /* AppConstants.swift in Sources */,
