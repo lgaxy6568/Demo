@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,10 +19,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="登录页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9A-P5-i8X">
-                    <rect key="frame" x="168" y="203" width="78" height="52"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-2a-dE8">
+                    <rect key="frame" x="126.5" y="325" width="161" height="30"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="21Z-mb-Fo0"/>
+                        <constraint firstAttribute="width" constant="161" id="XHa-Pu-eHk"/>
+                    </constraints>
+                    <state key="normal" title="QQ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ery-MD-Je4">
+                    <rect key="frame" x="126.5" y="394" width="161" height="30"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XMu-wJ-a5k"/>
+                        <constraint firstAttribute="width" constant="161" id="q2f-We-1L5"/>
+                    </constraints>
+                    <state key="normal" title="WEIBO">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9A-P5-i8X">
+                    <rect key="frame" x="140.5" y="203" width="133" height="84"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="133" id="6WZ-Vj-cQ1"/>
+                        <constraint firstAttribute="height" constant="84" id="DVc-GF-99y"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -29,10 +55,21 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="Ery-MD-Je4" firstAttribute="top" secondItem="Dp9-2a-dE8" secondAttribute="bottom" constant="39" id="TKS-q2-FsD"/>
+                <constraint firstItem="n9A-P5-i8X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="159" id="Vi7-ae-RLR"/>
+                <constraint firstItem="n9A-P5-i8X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wtn-h0-GLB"/>
+                <constraint firstItem="Dp9-2a-dE8" firstAttribute="top" secondItem="n9A-P5-i8X" secondAttribute="bottom" constant="38" id="k1X-Rc-Oih"/>
+                <constraint firstItem="Ery-MD-Je4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wDI-EA-f8b"/>
+                <constraint firstItem="Dp9-2a-dE8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xQP-k2-Zz0"/>
+            </constraints>
             <point key="canvasLocation" x="-81.159420289855078" y="58.928571428571423"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

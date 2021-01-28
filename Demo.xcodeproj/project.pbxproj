@@ -22,6 +22,7 @@
 		F8C92F5A25C110D600F0C806 /* ThreadUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C92F5925C110D600F0C806 /* ThreadUtils.swift */; };
 		F8C92F5D25C11AC100F0C806 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C92F5C25C11AC100F0C806 /* BaseViewController.swift */; };
 		F8C92F6025C135B900F0C806 /* SplashAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C92F5F25C135B900F0C806 /* SplashAdView.xib */; };
+		F8FD319725C2A18500983866 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD319625C2A18500983866 /* ExtUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F8C92F5925C110D600F0C806 /* ThreadUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadUtils.swift; sourceTree = "<group>"; };
 		F8C92F5C25C11AC100F0C806 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F8C92F5F25C135B900F0C806 /* SplashAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashAdView.xib; sourceTree = "<group>"; };
+		F8FD319625C2A18500983866 /* ExtUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				F839255025C00CBD00609A12 /* AppConstants.swift */,
 				F8C92F5C25C11AC100F0C806 /* BaseViewController.swift */,
+				F8FD319625C2A18500983866 /* ExtUIView.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				F839255625C00EA500609A12 /* LogUtils.swift in Sources */,
 				F839254C25C003C100609A12 /* LoginViewController.swift in Sources */,
 				F82CB54525BECA64007AE93A /* HomeViewController.swift in Sources */,
+				F8FD319725C2A18500983866 /* ExtUIView.swift in Sources */,
 				F8C92F5D25C11AC100F0C806 /* BaseViewController.swift in Sources */,
 				F8C92F5A25C110D600F0C806 /* ThreadUtils.swift in Sources */,
 				F82CB54125BECA64007AE93A /* AppDelegate.swift in Sources */,

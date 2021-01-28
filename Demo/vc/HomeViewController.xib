@@ -18,10 +18,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-Hr-q0q">
-                    <rect key="frame" x="105" y="224" width="150" height="89"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-Hr-q0q">
+                    <rect key="frame" x="132" y="398" width="150" height="100"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="lqv-MI-j3E"/>
+                        <constraint firstAttribute="height" constant="100" id="u7D-nh-l3t"/>
+                    </constraints>
                     <state key="normal" title="跳转至登录"/>
                     <connections>
                         <action selector="gotoLoginWithSender:" destination="-1" eventType="touchUpInside" id="USg-MM-SFb"/>
@@ -30,6 +33,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="eqP-Hr-q0q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1tu-U6-B0h"/>
+                <constraint firstItem="eqP-Hr-q0q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lUQ-br-yDv"/>
+            </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="68.973214285714278"/>
         </view>
     </objects>

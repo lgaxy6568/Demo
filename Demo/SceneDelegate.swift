@@ -82,6 +82,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var adTimer:DispatchSourceTimer? = nil
     var adCountDownTime = 5
     var adView:UIView? = nil
+    var adSkipView:UILabel? = nil
+    private func startLoadAd(){
+        adView = Bundle.main.loadNibNamed("SplashAdView", owner: self, options: nil)?[0] as? UIView
+        if(adView != nil){
+            adSkipView = (self.adView!.viewWithTag(1001) as? UILabel)
+            adSkipView?.addOnClickListener(target: self,action: #selector(onClickBySkipView))
+            adView?.frame = self.window!.bounds
+            window?.addSubview(adView!)
+            LogUtils.LogD("startLoadAd(),【广告已添加~】")
+            startAdCountDownTimer()
+        }else{
+            LogUtils.LogD("startLoadAd(),adView is null")
+        }
+    }
+        
     private func startAdCountDownTimer() {
         adTimer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
         adTimer?.schedule(deadline: .now(),repeating: .seconds(1))
@@ -96,12 +111,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func updateSkipView(){
-        LogUtils.LogD("updateSkipView(),\(adCountDownTime)")
-        if(self.adCountDownTime <= 0){
+        let cur = adCountDownTime
+        LogUtils.LogD("updateSkipView(),\(cur)")
+        if(cur <= 0){
             adTimer?.cancel()
             removeAdView()
         }else{
-            //self.skipView?.text = "\(limitTime)秒"
+            adSkipView?.text = "\(cur)秒"
             self.adCountDownTime -= 1
         }
     }
@@ -113,16 +129,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
     
-    private func startLoadAd(){
-        adView = Bundle.main.loadNibNamed("SplashAdView", owner: self, options: nil)?[0] as? UIView
-        if(adView != nil){
-            self.window?.addSubview(adView!)
-            LogUtils.LogD("startLoadAd(),【广告已添加~】")
-            startAdCountDownTimer()
-        }else{
-            LogUtils.LogD("startLoadAd(),adView is null")
-        }
+    /*轻点手势的方法*/
+    @objc func onClickBySkipView(){
+        LogUtils.LogD("onClickBySkipView(),【点击跳过~】")
+        removeAdView()
     }
+    
+    
+//    private func createSkipView() -> UILabel{
+//        let skipWidth = 100
+//        let skipHeight = 100
+//        let sw = Int(ceil(AppConstants.SCREEN_WIDTH))
+//        let sh = Int(ceil(AppConstants.SCREEN_HEIGHT))
+//        let marginTop = 10
+//        let marginRight = 10
+//        let x = sw  - (skipWidth + marginRight)
+//        let y = 0 + marginTop
+//        LogUtils.LogD("createSkipView(),screenWidth=\(sw),screenHeight=\(sh)")
+//        let vv = UILabel.init(frame: CGRect(x: x, y: y, width: skipWidth, height: skipHeight))
+//        vv.backgroundColor = UIColor.orange
+//        vv.textAlignment = .center
+//        vv.textColor = UIColor.white
+//        return vv
+//    }
     //==============================广告End=============================
 }
 
